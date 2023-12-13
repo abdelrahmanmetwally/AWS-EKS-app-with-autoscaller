@@ -50,3 +50,6 @@ kubectl apply -f  nginx.yaml
 ### 8.Increase the replicas of nginx deployemnt
 To test that the autoscaling is doing its job edit the deployemnt of nginx and increase the number of replics for example for 15.
 you will notice that a new node is being created to be able to match this demand.
+
+### References
+https://github.com/Ahmed-Moourad/Coursera-Guided-Project-EKS
