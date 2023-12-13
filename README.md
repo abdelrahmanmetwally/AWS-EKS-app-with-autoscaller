@@ -35,8 +35,10 @@ Then,execute the following command to configure kubectl for interacting with EKS
 ```bash
 aws eks update-kubeconfig --name <cluster_name>
 ```
+note: you will find commands.sh files, you can use these commands in it to validate that the creation and working of workloads for this and upcoming step.
 ### 6. Deploy cluster autoscaller
-First, modify the file with your eks cluster name and make sure that the version of eks cluster the same as eks which you created, then deploy autoscaller using:
+First,we add policy to the role we created for node group to enable it to autoscale the instances 
+then,modify the file with your eks cluster name and make sure that the version of eks cluster the same as eks which you created ,and deploy autoscaller using:
 ```bash
 kubectl apply -f cluster-AutoScaler.yaml
 ```
