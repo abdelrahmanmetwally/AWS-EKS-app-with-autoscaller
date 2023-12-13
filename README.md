@@ -13,11 +13,11 @@ we create the required resources  using CloudFormation stack.
 ### 2. Create a Role with "AmazonEKSCluster" Policy to give the required permission for EKS   
 ### 3. Creating EKS Cluster through these steps
 
-1.choose the vpc you have created and make sure the required subnets are chosen.
-2.choose the role you have created for eks.
-3.choose security group which has been created using the template of vpc.
-4.Public and private cluster endpoint access settings.
-5.keep the rest settings as default( or you can change them depending on your preferences).
+- Choose the vpc you have created and make sure the required subnets are chosen.
+- Choose the role you have created for eks.
+- Choose security group which has been created using the template of vpc.
+- ChoosPublic and private cluster endpoint access settings.
+- Keep the rest settings as default( or you can change them depending on your preferences).
 
 ### 4. Node Group Creatoin Steps
 - create role for ec2 with policies (EC2ContainerRegistry, EKS_CNI, EKSWorkerNode, IAM-Policy_for_AutoScaler) and choose it while creating node group .
