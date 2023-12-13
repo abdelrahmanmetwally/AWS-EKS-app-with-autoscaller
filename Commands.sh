@@ -17,8 +17,6 @@ kubectl cluster-info
 
 --- #Cluster AutoScaler
 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml
-
 kubectl get deployment -n kube-system cluster-autoscaler
 
 kubectl edit deployment -n kube-system cluster-autoscaler
